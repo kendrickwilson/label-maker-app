@@ -1,0 +1,7 @@
+{
+    "name": "Label Maker",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "theme_color": "#003E95"
+}

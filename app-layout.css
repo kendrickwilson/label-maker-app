@@ -1,0 +1,150 @@
+@media screen {
+    #printer {
+        display: none;
+    }
+    body {
+        background-color: gray;
+    }
+    .form-panel {
+        background-color: white;
+        display: inline-block;
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        width: 420px;
+        max-height: 600px;
+        height: 600px;
+        font-weight: bold;
+        zoom: 1
+    }
+    .preview-panel {
+        background-color: white;
+        display: inline-block;
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+        width: 600px;
+        max-width: 600px;
+        max-height: 600px;
+        height: 600px;
+        vertical-align: top;
+        zoom: 1;
+        background-size: cover;
+        background-image: url('dvd.jpg');
+    }
+}
+
+@media print {
+    #app {
+        display: none;
+    }
+    #cd-1 {
+        max-width: 600px;
+        width: 600px;
+        max-height: 600px;
+        height: 600px;
+        padding: 0;
+        padding-left: 200px;
+        padding-top: 120px;
+        zoom: .80;
+    }
+    #cd-2 {
+        max-width: 600px;
+        width: 600px;
+        max-height: 600px;
+        height: 600px;
+        padding: 0;
+        padding-left: 200px;
+        zoom: .80;
+    }
+    @page {
+        margin: 0;
+    }
+    body {
+        margin: 0;
+    }
+    header nav,
+    footer {
+        display: none;
+    }
+    #printer {
+        height: fit-content;
+        width: fit-content;
+    }
+}
+
+.ui-button {
+    width: 200px;
+    background-color: navy;
+    color: white;
+    margin: 10px;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.panel-wrapper {
+    margin: 20px;
+}
+
+.top-box {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    height: 200px;
+    width: 600px;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.left-box {
+    position: relative;
+    bottom: 0px;
+    right: 0;
+    height: 200px;
+    width: 250px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.center-box {
+    position: relative;
+    bottom: 202px;
+    right: -250px;
+    height: 200px;
+    width: 100px;
+    max-width: 100px;
+    overflow-x: hidden;
+}
+
+.right-box {
+    position: relative;
+    bottom: 404px;
+    right: -350px;
+    height: 200px;
+    width: 250px;
+    max-width: 250px;
+    overflow-x: hidden;
+    text-align: center
+}
+
+.buttom-box {
+    padding-top: 20px;
+    position: relative;
+    bottom: 460px;
+    right: 0px;
+    height: 180px;
+    width: 500px;
+    max-width: 500px;
+    margin: auto;
+    overflow-x: hidden;
+    text-align: center;
+    vertical-align: text-bottom;
+    font-weight: bold;
+    font-style: italic!important;
+    font-size: 20px;
+    font-family: "Impact", Times, serif;
+}
