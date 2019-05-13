@@ -30,7 +30,7 @@ if (installButton) {
         app.promptEvent = e;
 
         // show
-        installButton.style.display = 'block';
+        installButton.style.display = 'inline-block';
         installButton.addEventListener("click", () => {
             app.promptEvent.prompt();
             //app.promptEvent.userChoice.then(handlePromptResponse);
