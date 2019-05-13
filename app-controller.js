@@ -14,6 +14,8 @@ var buttom1Preview = document.getElementById("buttom-box-1-pre");
 var buttom2Preview = document.getElementById("buttom-box-2-pre");
 
 var printButton = document.getElementById("printButton");
+var installButton = document.getElementById("installButton");
+var installButton = document.getElementById("installButton");
 
 //------------------------------------------------------------------------------
 printButton.addEventListener("click", function(e) {

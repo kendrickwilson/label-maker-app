@@ -74,7 +74,7 @@
 }
 
 .ui-button {
-    width: 200px;
+    width: 100px;
     background-color: navy;
     color: white;
     margin: 10px;
@@ -83,6 +83,11 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
+}
+
+#installButton {
+    background-color: green;
+    display: none;
 }
 
 .panel-wrapper {

@@ -23,14 +23,14 @@ self.addEventListener("fetch", (e) => {
 });
 
 // ----------------------------------------------------------------------
-var installButton = document.getElementById("install-button");
+var installButton = document.getElementById("installButton");
 if (installButton) {
     window.addEventListener("beforeinstallprompt", (e) => {
         e.preventDefault();
         app.promptEvent = e;
 
         // show
-        installButton.disabled = false;
+        installButton.style.display = 'block';
         installButton.addEventListener("click", () => {
             app.promptEvent.prompt();
             //app.promptEvent.userChoice.then(handlePromptResponse);
