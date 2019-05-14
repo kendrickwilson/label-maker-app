@@ -1,8 +1,7 @@
 {
     "name": "Label Maker",
     "short_name": "Label Maker",
-    "start_url": "index.html",
-    "scope": "/",
+    "start_url": ".",
     "display": "standalone",
     "theme_color": "#003E95",
     "background_color": "#000000",
