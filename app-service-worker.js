@@ -25,17 +25,22 @@ self.addEventListener("fetch", (e) => {
 }); 
 */
 // ----------------------------------------------------------------------
+var deferredPrompt;
 var installButton = document.getElementById("installButton");
 if (installButton) {
     window.addEventListener("beforeinstallprompt", (e) => {
         e.preventDefault();
-        app.promptEvent = e;
+        deferredPrompt = e;
 
-        // show
         installButton.style.display = 'inline-block';
         installButton.addEventListener("click", () => {
-            app.promptEvent.prompt();
-            //app.promptEvent.userChoice.then(handlePromptResponse);
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then((choiceResult) => {
+                if (choiceResult.outcome === 'accepted') {
+                    installButton.style.display = 'none';
+                }
+                deferredPrompt = null;
+            })
         });
     });
 }
