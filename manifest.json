@@ -1,7 +1,7 @@
 {
     "name": "Label Maker",
     "short_name": "Label Maker",
-    "start_url": ".",
+    "start_url": "https://kendrickwilson.github.io/label-maker-app/",
     "display": "standalone",
     "theme_color": "#003E95",
     "background_color": "#000000",
