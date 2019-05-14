@@ -6,7 +6,7 @@ self.addEventListener("install", (e) => {
         caches.open(CACHE_NAME).then((cache) => {
             return cache.addAll(
                 [
-                    "/index.html", "/app-controller.js", "/app-layout.css", "/app-service-worker.js"
+                    "/favicon.png", "/index.html", "/app-controller.js", "/app-layout.css", "/app-service-worker.js"
                 ]
             );
         })
