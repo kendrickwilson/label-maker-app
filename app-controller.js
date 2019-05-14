@@ -27,7 +27,7 @@ rightTextArea.addEventListener("focus", function(e) {
     rightPreview.innerHTML = text2html(rightTextArea.value);
 });
 leftTextArea.addEventListener("keyup", function(e) {
-    leftPreview.innerHTML = ltext2html(leftTextArea.value);
+    leftPreview.innerHTML = text2html(leftTextArea.value);
 });
 leftTextArea.addEventListener("focus", function(e) {
     leftPreview.innerHTML = text2html(leftTextArea.value);
