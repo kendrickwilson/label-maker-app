@@ -7,17 +7,17 @@
     "theme_color": "#003E95",
     "background_color": "#003E95",
     "icons ": [{
-            "src": "/favicon.png",
+            "src": "./favicon.png",
             "type": "image/png",
             "sizes": "96x96"
         },
         {
-            "src": "/favicon192.png",
+            "src": "./favicon192.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "/favicon512.png",
+            "src": "./favicon512.png",
             "type": "image/png",
             "sizes": "512x512"
         }
