@@ -87,17 +87,11 @@
 
 #installButton {
     background-color: green;
+    display: none;
 }
 
 .panel-wrapper {
     margin: 20px;
-}
-
-@media all and (display-mode: standalone) {
-    #installButton {
-        background-color: green;
-        display: none;
-    }
 }
 
 .top-box {

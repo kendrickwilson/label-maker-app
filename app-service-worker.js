@@ -1,7 +1,6 @@
 var CACHE_NAME = "cache-v1";
 
 // ----------------------------------------------------------------------
-/*
 self.addEventListener("install", (e) => {
     e.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
@@ -13,17 +12,15 @@ self.addEventListener("install", (e) => {
         })
     );
 });
-*/
 // ----------------------------------------------------------------------
-/*
 self.addEventListener("fetch", (e) => {
     e.respondWith(fetch(e.request).catch(() => {
         return caches.open(CACHE_NAME).then((cache) => {
             return caches.match(e.request);
         })
     }));
-}); 
-*/
+});
+
 // ----------------------------------------------------------------------
 var deferredPrompt;
 var installButton = document.getElementById("installButton");
