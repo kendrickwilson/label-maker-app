@@ -1,13 +1,26 @@
 {
     "name": "Label Maker",
     "short_name": "Label Maker",
-    "start_url": "https://kendrickwilson.github.io/label-maker-app/",
+    "start_url": "/",
     "display": "standalone",
     "theme_color": "#003E95",
-    "background_color": "#000000",
+    "background_color": "#FFFFFF",
+    "orientation": "portrait",
     "icons ": [{
+        "src": "favicon.png",
+        "type": "image/png",
+        "sizes": "64x64"
+    }, {
+        "src": "favicon144.png",
+        "type": "image/png",
+        "sizes": "144x144"
+    }, {
         "src": "favicon192.png",
         "type": "image/png",
         "sizes": "192x192"
+    }, {
+        "src": "favicon512.png",
+        "type": "image/png",
+        "sizes": "512x512"
     }]
 }
