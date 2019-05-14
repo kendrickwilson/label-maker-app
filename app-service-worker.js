@@ -23,21 +23,19 @@ self.addEventListener("fetch", (e) => {
 
 // ----------------------------------------------------------------------
 var deferredPrompt;
-var installButton = document.getElementById("installButton");
-if (installButton) {
-    window.addEventListener("beforeinstallprompt", (e) => {
-        e.preventDefault();
-        deferredPrompt = e;
+window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
 
-        installButton.style.display = 'inline-block';
-        installButton.addEventListener("click", () => {
-            deferredPrompt.prompt();
-            deferredPrompt.userChoice.then((choiceResult) => {
-                if (choiceResult.outcome === 'accepted') {
-                    installButton.style.display = 'none';
-                }
-                deferredPrompt = null;
-            })
-        });
+    var installButton = document.getElementById("installButton");
+    installButton.style.display = 'inline-block';
+    installButton.addEventListener("click", () => {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((choiceResult) => {
+            if (choiceResult.outcome === 'accepted') {
+                installButton.style.display = 'none';
+            }
+            deferredPrompt = null;
+        })
     });
-}
+});
