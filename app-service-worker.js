@@ -23,15 +23,15 @@ self.addEventListener("fetch", (e) => {
 
 // ----------------------------------------------------------------------
 var deferredPrompt;
-window.addEventListener("beforeinstallprompt", (e) => {
+window.addEventListener("beforeinstallprompt", function(e) {
     e.preventDefault();
     deferredPrompt = e;
 
     var installButton = document.getElementById("installButton");
     installButton.style.display = 'inline-block';
-    installButton.addEventListener("click", () => {
+    installButton.addEventListener("click", function() {
         deferredPrompt.prompt();
-        deferredPrompt.userChoice.then((choiceResult) => {
+        deferredPrompt.userChoice.then(function(choiceResult) {
             if (choiceResult.outcome === 'accepted') {
                 installButton.style.display = 'none';
             }
