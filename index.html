@@ -71,34 +71,6 @@
     </div>
     <script src="./app-controller.js"></script>
     <script>
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("./app-service-worker.js")
-                .then(function(registration) { // Registration was successful
-                    console.log("ServiceWorker registration successful with scope: ", registration.scope);
-                    // ----------------------------------------------------------------------
-                    var deferredPrompt;
-                    window.addEventListener("beforeinstallprompt", function(e) {
-                        e.preventDefault();
-                        deferredPrompt = e;
-                        console.log("before install prompt fired");
-                        var installButton = document.getElementById("installButton");
-                        installButton.style.display = 'inline-block';
-                        installButton.addEventListener("click", function() {
-                            deferredPrompt.prompt();
-                            deferredPrompt.userChoice.then(function(choiceResult) {
-                                if (choiceResult.outcome === 'accepted') {
-                                    installButton.style.display = 'none';
-                                }
-                                deferredPrompt = null;
-                            })
-                        });
-                    });
-
-                }).catch(function(err) { // registration failed :(
-
-                    console.error("ServiceWorker registration failed: ", err);
-                });
-        }
     </script>
 </body>
 
