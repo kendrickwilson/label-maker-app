@@ -6,7 +6,7 @@ self.addEventListener("install", function(e) {
         caches.open(CACHE_NAME).then(function(cache) {
             return cache.addAll(
                 [
-                    "favicon192.png", "favicon512.png", "favicon.png", "index.html", "app-controller.js", "app-layout.css", "app-service-worker.js", "dvd.jpg", "Mount-nebo-logo-white.png"
+                    "favicon144.png", "favicon192.png", "favicon512.png", "favicon.png", "index.html", "app-controller.js", "app-layout.css", "app-service-worker.js", "dvd.jpg", "Mount-nebo-logo-white.png"
                 ]
             );
         })
